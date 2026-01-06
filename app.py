@@ -1,5 +1,5 @@
 import streamlit as st
-import PyPDF2
+from PyPDF2 import PdfReader
 import re
 import nltk
 from nltk.corpus import stopwords
@@ -10,9 +10,9 @@ nltk.download("stopwords")
 
 # -------- FUNCTIONS --------
 
-def extract_text_from_pdf(file):
+def extract_text_from_pdf(pdf_file):
+    reader = PdfReader(pdf_file)
     text = ""
-    reader = PyPDF2.PdfReader(file)
     for page in reader.pages:
         text += page.extract_text()
     return text
