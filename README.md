@@ -1,14 +1,21 @@
-# ATS Resume Analyzer
+## ATS Resume Analyzer
+A Streamlit app to calculate ATS score using NLP (TF-IDF & cosine similarity)
 
-A web-based Applicant Tracking System (ATS) Resume Analyzer that evaluates
-how well a resume matches a given job description using NLP techniques.
+### Features
+- Resume PDF upload
+- Job description matching
+- ATS score calculation
+- Missing keyword detection
+- Resume improvement suggestions
 
-## Features
-- Upload resume in PDF format
-- Paste job description
-- Calculates ATS match score (%)
-- Displays missing keywords
-- Simple and interactive Streamlit UI
+  
+##  Smart Suggestions
+- Suggests resume improvements when ATS score is low
+- Recommends adding missing skills from Job Description
+- Provides formatting & optimization tips for ATS systems
+
+### Live Demo
+https://ats-resume-analyzer-2svcv7opvrv8fdearq5nc7.streamlit.app/
 
 ## Tech Stack
 - Python
